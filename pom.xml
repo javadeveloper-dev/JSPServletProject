@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>EmployeeCRUDUsingMaven</groupId>
+  <artifactId>EmployeeCRUDUsingMaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>     <!-- JUnit Dependency -->
+	      <version>3.8.1</version>
+	      <scope>test</scope>
+    </dependency>
+    
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId> <!-- For Servlet API Dependency  -->
+	    <version>4.0.1</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>       <!-- JSTL Dependency -->
+	    <version>1.1.2</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>javax.servlet.jsp</groupId>
+	    <artifactId>jsp-api</artifactId>      <!-- JSP API Dependency -->
+	    <version>2.2.1-b03</version>
+	    <scope>provided</scope>
+	</dependency>
+   
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>  <!-- MySql Connector Dependency -->
+	    <version>8.0.30</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>taglibs</groupId>
+	  <artifactId>standard</artifactId>   <!-- For Tag IN JSP  -->
+	  <version>1.1.2</version>
+	</dependency>
+
+	<!--<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.11.0</version>
+ </dependency>-->
+ 
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
